@@ -1,0 +1,12 @@
+.:
+total 4
+drw-rwxr-x. 2 alsu9m alsu9m 22 Oct 14 00:31 dir
+-rwxrwx-wx. 1 root   alsu9m  9 Oct 14 00:26 file
+-rw-------. 1 alsu9m alsu9m  0 Oct 14 00:35 file1
+-rw-rw-rw-. 1 alsu9m alsu9m  0 Oct 14 00:36 file2
+
+./dir:
+ls: cannot access './dir/new_file': Permission denied
+total 0
+-????????? ? ? ? ?            ? new_file
+

@@ -1,0 +1,41 @@
+  370  mkdir test
+  371  cd test
+  372  touch file
+  373  chmod 000 file
+  374  echo "тест" > file
+  375  cat file
+  376  chmod u+w file
+  377  ll file
+  378  echo "тест" > file
+  379  cat file
+  380  chmod g+r file
+  381  ll file
+  382  cat file
+  383  chmod u+r file
+  384  ls -l file
+  385  cat file
+  386  mkdir dir
+  387  cd dir
+  388  touch new_file
+  389  echo "file 2" > new_file
+  390  ls
+  391  chmod u-x dir
+  392  cd
+  393  chmod u-x dir
+  394  cd test
+  395  chmod u-x dir
+  396  ll dir
+  397  cat dir/new_file
+  398  rm dir/new_file
+  399  chown root file
+  400  chgrp root file
+  401  umask 0077
+  402  touch file1
+  403  ll file
+  404  ll file1
+  405  umask 0000
+  406  touch file2
+  407  ll file2
+  408  ls -lR
+  409  history
+  410  history > lab2_history.txt
