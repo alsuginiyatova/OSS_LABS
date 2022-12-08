@@ -4,11 +4,11 @@
   373  chmod 000 file
   374  echo "тест" > file
   375  cat file
-  376  chmod u+w file
+  376  chmod 200 file
   377  ll file
   378  echo "тест" > file
   379  cat file
-  380  chmod g+r file
+  380  chmod 200 file
   381  ll file
   382  cat file
   383  chmod u+r file
@@ -27,15 +27,14 @@
   396  ll dir
   397  cat dir/new_file
   398  rm dir/new_file
-  399  chown root file
-  400  chgrp root file
-  401  umask 0077
-  402  touch file1
-  403  ll file
-  404  ll file1
-  405  umask 0000
-  406  touch file2
-  407  ll file2
-  408  ls -lR
-  409  history
-  410  history > lab2_history.txt
+  399  sudo chown root:root file
+  400  umask 0077
+  401  touch file1
+  402  ll file
+  403  ll file1
+  404  umask 0000
+  405  touch file2
+  406  ll file2
+  407  ls -lR
+  408  history
+  409  history > lab2_history.txt
