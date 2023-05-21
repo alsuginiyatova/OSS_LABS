@@ -29,4 +29,4 @@
  29  vi /etc/security/limits.conf
  30  su user1
  31  vi /etc/security/limits.conf
- 32  history > ./lab9_history
+ 32  history > commandline_history
