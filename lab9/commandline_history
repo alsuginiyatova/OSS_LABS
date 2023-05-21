@@ -1,0 +1,32 @@
+  1  ldd /bin/login | grep pam
+  2  ls -l /lib64/libpam*
+  3  ls -l /lib64/security/
+  4  vi /etc/pam.d/system-auth
+  5  vi /etc/pam.d/su
+  6  su -c "hostname mephi"
+  7  vi /etc/pam.d/su
+  8  su
+  9  vi /etc/pam.d/su
+ 10  useradd -G wheel -p password -s /bin/bash user1
+ 11  sudo useradd -G wheel -p password -s /bin/bash user1
+ 12  su user1
+ 13  sudo passwd user1
+ 14  su user1
+ 15    vi /etc/pam.d/su
+ 16  nano /etc/pam.d/login
+ 17  cp /etc/pam.d/login ./logcopy
+ 18  su root
+ 19  su user1
+ 20  cp ./logcopy /etc/pam.d/login 
+ 21  sudo cp ./logcopy /etc/pam.d/login 
+ 22  man pam_pwquality
+ 23  nano /etc/security/pwquality.conf
+ 24  vi /etc/pam.d/system-auth
+ 25  sudo passwd alsu9m 
+ 26  vi /etc/pam.d/system-auth
+ 27  vi /etc/security/pwquality.conf
+ 28  man pam_limits
+ 29  vi /etc/security/limits.conf
+ 30  su user1
+ 31  vi /etc/security/limits.conf
+ 32  history > ./lab9_history
