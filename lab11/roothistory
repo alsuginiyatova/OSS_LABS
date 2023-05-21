@@ -1,0 +1,11 @@
+   11  auditctl -D
+   12  auditctl -w /home/alsu9m/file1 -p war -k alsu9m_file1
+   13  auditctl -l
+   14  aureport --file -ts today -i --summary
+   15  aureport --file -ts recent
+   16  ausearch -a 198
+   17  aureport
+   18  aureport --auth -ts recent
+   19  aureport --user -ts recent -i
+   20  ausearch --uid 1000 -ts recent
+   21  history > roothistory
